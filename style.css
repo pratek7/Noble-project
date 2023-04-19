@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+  }
+  /* HEADER CODE */
+  .header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(public/computer.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+
+ 
+  .text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .text-box h1 {
+    font-size: 62px;
+  }
+  .text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+  }
+  .hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+  .hero-btn:hover {
+    border: 1px solid #f33123;
+    background-color: #f44336;
+    transition: 0.5s;
+  }
+  nav .bi {
+    display: none;
+  }
+  @media (max-width: 1000px) {
+    .text-box {
+      font-size: 16px;
+    }
+  }
+  /* course */
+  .course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+  h1 {
+    font-weight: 600;
+    font-size: 36px;
+  }
+  p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center;
+  }
+  .row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .course-col {
+    flex-basis: 31%;
+    background-color: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 17px;
+    box-sizing: border-box;
+    transition: 0.5s;
+  }
+  h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  .course-col:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  }
+  @media (max-width: 1000px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+  /* campus */
+  .campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .campus-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  .campus-col img {
+    width: 100%;
+    display: block;
+  }
+  /* LAYER H3 */
+  .layer {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+  }
+  .layer:hover {
+    background: rgba(226, 0, 0, 0.7);
+  }
+  .layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    top: 0;
+    left: 0;
+    transform: translateX(-50deg);
+    font-size: 26px;
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+  }
+  .layer:hover h3 {
+    opacity: 1;
+    top: 90%;
+  }
+  /* FACILITIES LIST */
+  .facilities {
+    width: 70%;
+    margin: auto;
+    padding: 32px;
+    align-content: center;
+  }
+  .facilities-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin: 5%;
+    text-align: left;
+    transition: 0.5s;
+  }
+  .facilities-col img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .facilities-col p {
+    padding: 0;
+  }
+  .facilities-col h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  .facilities-col:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  }
+  /* testimonials */
+  .testimonial {
+    width: 100%;
+    
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+  }
+  .testimonial-col {
+    flex-basis: 44%;
+  margin-left: 4%;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+    transition: 0.5s;
+  }
+  .testimonial-col:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  }
+  .testimonial-col img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+  }
+  .testimonial-col p {
+    padding: 0;
+  }
+  .testimonial-col h3 {
+    margin-top: 15px;
+    text-align: left;
+  }
+  .testimonial-col .bi {
+    color: #f44336;
+  }
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+  @media (max-width: 1000px) {
+    .testimonial-col img {
+      height: 40px;
+      margin-left: 5%;
+      margin-right: 5%;
+      border-radius: 50%;
+    }
+    .grid {
+      margin-left: 5%;
+      margin-right: 5%;
+      grid-template-columns: none;
+    }
+  }
+  /* CALL TO ACTION */
+  .cta {
+    margin: 100px auto;
+    width: 80%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(/public/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    font-size: 13px;
+  }
+  .cta .cta-h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+  @media (max-width: 1000px) {
+    .cta h1 {
+      font-size: 22px;
+    }
+  }
+  
+.letter{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.font-letter::first-letter {
+    font-size: 100%;
+    color: red;
+}
+.font-letter{
+    color: #fff;
+    font-size: large;
+    
+  }
